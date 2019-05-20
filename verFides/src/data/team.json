@@ -1,0 +1,24 @@
+{
+    "member": [
+        {
+            "images": "assets/images/icon-member1.png",
+            "title": "Marco Marano",
+            "description": "Managing Director" 
+        },
+        {
+            "images": "assets/images/icon-member2.png",
+            "title": "Carlo Borea",
+            "description": "Director" 
+        },
+        {
+            "images": "assets/images/icon-member3.png",
+            "title": "Roberta Vacri",
+            "description": "Director" 
+        },
+        {
+            "images": "assets/images/icon-member4.png",
+            "title": "Terence Pay",
+            "description": "International Tax Advisory" 
+        }
+    ]
+}

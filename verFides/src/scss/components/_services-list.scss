@@ -1,0 +1,46 @@
+.services-list {
+    display: none;
+    @include media ("<=tablet") {
+        display: flex;
+        flex-direction: column;
+        padding: 0 0  0 30px;
+        max-width: 100%;
+        @include media ("<=phone") {
+            padding: 0 0  0 20px;
+        }
+    }
+    .services-item {
+        margin-top: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #787878;
+        &:last-child {
+            border-bottom: none; 
+        }
+        a {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            text-decoration: none;
+            color: #787878;   
+            &:hover {
+                opacity: 0.8;
+            }          
+        }
+        img {
+            height: 110px;
+            margin-right: 20px;
+            @include media ("<=phone") {
+                height: 60px;
+            }
+        }
+        p {
+            font-size: 28px;
+            margin: 0;
+            max-width: 54vw;
+            @include media ("<=phone") {
+                font-size: 18px;
+                max-width: 70vw;
+            }
+        }
+    }
+}
