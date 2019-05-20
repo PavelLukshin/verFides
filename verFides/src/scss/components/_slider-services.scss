@@ -1,0 +1,48 @@
+.wrapper-slider {
+    max-width: 775px;
+    text-align: center;
+    margin: 65px auto 0 auto;
+    @include media ("<=widescreen") {
+        max-width: 750px;
+    }
+    @include media ("<=desktop") {
+        max-width: 500px;
+    }
+    @include media ("<=tablet") {
+        display: none;
+    }
+    .slider-item {  
+        a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            transition: .3s ease-in-out;
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+        p {
+            margin-top: 25px;
+            color: #787878;
+        }
+    }
+}
+.slick-prev {
+    height: 70px;
+    width: 40px;
+    top: 70px;
+    left: -80px;
+    &::before {
+        content: url(../images/left-arrow.png);
+    }
+}
+.slick-next {
+    height: 70px;
+    width: 40px;
+    top: 70px;
+    right: -80px;
+    &::before {
+        content: url(../images/right-arrow.png);
+    }   
+}
