@@ -1,7 +1,0 @@
-.break-image {
-    background: url(../images/break-bg.jpg) no-repeat center top / cover;
-    min-height: 300px;
-    @include media ("<=tablet") {
-        background: url(../images/mobile-bg-break.jpg) no-repeat right top / cover;
-       }
-}
