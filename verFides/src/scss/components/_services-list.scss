@@ -3,10 +3,10 @@
     @include media ("<=tablet") {
         display: flex;
         flex-direction: column;
-        padding: 0 0  0 30px;
+        padding: 0 30px  0 30px;
         max-width: 100%;
         @include media ("<=phone") {
-            padding: 0 0  0 20px;
+            padding: 0 20px 0 20px;
         }
     }
     .services-item {
@@ -22,6 +22,7 @@
             align-items: center;
             text-decoration: none;
             color: #787878;   
+            transition: opacity .3s ease-in-out;
             &:hover {
                 opacity: 0.8;
             }          
@@ -36,10 +37,9 @@
         p {
             font-size: 28px;
             margin: 0;
-            max-width: 54vw;
+            max-width: 500px;
             @include media ("<=phone") {
                 font-size: 18px;
-                max-width: 70vw;
             }
         }
     }

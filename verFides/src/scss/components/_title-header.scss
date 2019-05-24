@@ -27,20 +27,22 @@
         }
     }
 }
-.scroll {
+.scroll { 
     display: flex;
     justify-content: center;
+    margin-right: 40px;
     a {
         z-index: 9;
         img {
             position: absolute;
             bottom: 80px;
+            left: auto; 
             height: 40px;
             padding: 5px;
             border: 1px solid #fff; 
-            transition: .3s ease-in-out; 
+            transition: background-color .3s ease-in-out; 
             &:hover {
-                background: #3b648d;
+                background-color: #3b648d;
             }
         }
     }
@@ -58,7 +60,7 @@
         border: none;
         background: transparent;
         color: #fff;
-        transition: .3s ease-in-out;
+        transition: color .3s ease-in-out;
         &:hover {
             color: #438bd3;
         }

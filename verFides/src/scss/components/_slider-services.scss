@@ -17,7 +17,7 @@
             flex-direction: column;
             align-items: center;
             text-decoration: none;
-            transition: .3s ease-in-out;
+            transition: opacity .3s ease-in-out;
             &:hover {
                 opacity: 0.8;
             }
@@ -33,16 +33,27 @@
     width: 40px;
     top: 70px;
     left: -80px;
+    background: url(../images/left-arrow.svg) no-repeat center center / cover!important;
     &::before {
-        content: url(../images/left-arrow.png);
+        display: none;
     }
+    &:hover, &:focus {
+        opacity: 0.6;
+        outline: none;
+    }
+  
 }
 .slick-next {
     height: 70px;
     width: 40px;
     top: 70px;
     right: -80px;
+    background: url(../images/right-arrow.svg) no-repeat center center / cover!important;
     &::before {
-        content: url(../images/right-arrow.png);
-    }   
+        display: none;
+    }
+    &:hover, &:focus {
+        opacity: 0.6;
+        outline: none;
+    }
 }

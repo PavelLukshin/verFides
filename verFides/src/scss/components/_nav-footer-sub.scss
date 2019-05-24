@@ -1,4 +1,9 @@
 .nav-footer-sub {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    line-height: 1.8em;
+    max-width: 1000px;
     margin-bottom: 50px;
     @include media ("<=tablet") {
         display: none;
@@ -14,16 +19,9 @@
         font-size: 14px;
         color: #1a3255;
         text-decoration: none;
-        transition: .3s ease-in-out; 
+        transition: text-decoration .3s ease-in-out; 
         &:hover {
             text-decoration: underline;
         }
-    }
-    .menu-other {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        line-height: 1.8em;
-        max-width: 1000px;
     }
 }

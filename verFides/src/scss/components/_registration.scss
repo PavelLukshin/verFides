@@ -78,17 +78,17 @@
         font-size: 14px;
         font-weight: bold;
         color: #fff;
-        min-width: 170px;
-        max-width: 170px;
+        width: 170px;
         min-height: 50px;
         margin-top: 40px;
-        transition: .3s ease-in-out; 
-        img {
+        padding: 5px;
+        transition: background-color .3s ease-in-out; 
+        .fa-arrow-right {
+            font-size: 12px;
             margin-left: 10px;
-            height: 10px;
         }
         &:hover {
-            background: #3b648d;
+            background-color: #3b648d;
         }
     }
 }

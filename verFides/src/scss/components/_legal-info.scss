@@ -18,15 +18,10 @@
             font-size: 14px;
             line-height: 1.4em;
             color: #787878;
-            max-width: 300px;
-            margin-right: 35px;
-            @include media ("<=desktop") {
-                max-width: 220px;
-                margin-right: 10px;
-            }
-            &:nth-child(3n) {
-                margin-right: 0;
-            }
+            column-count: 3;
+            max-height: 180px;
+            max-width: 975px;
+            padding: 0 20px;
         }
     }
 }

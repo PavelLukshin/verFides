@@ -3,7 +3,7 @@
 
   $(() => {
 
-// Hamberger
+// Hamburger
 $('.burger').click(function(){
   $('.nav-menu-header').toggleClass('active');
   $('.hamburger--slider').toggleClass('is-active');
@@ -30,6 +30,16 @@ videoEl.addEventListener('pause', function () {
 
 playBtn.innerText = "Play ►";
 }, false);
+
+// Scroll animation
+$(document).ready(function(){
+  $(".scroll, .nav-menu-header").on("click","a", function (event) {
+      event.preventDefault();
+      var id  = $(this).attr('href'),
+          top = $(id).offset().top;
+      $('body,html').animate({scrollTop: top}, 1500);
+  });
+});
 
 // Slider
 $('.slider').slick({
@@ -92,9 +102,9 @@ $.getJSON('assets/data/team.json', function(data) {
         const articles = $(`
 
         <article>
-          <a class="article-titel" href="#">${data.article[i].title}</a>
+          <a class="article-title" href="#"><h4>${data.article[i].title}</h4></a>
           <p class="article-text">${data.article[i].description}</p>
-          <a href="#" class="readmore">Read More <img src="assets/images/right-arrow-management.svg"></a>
+          <a href="#" class="read-more">Read More<i class="fas fa-arrow-right"></i></a>
         </article>
 
       `);

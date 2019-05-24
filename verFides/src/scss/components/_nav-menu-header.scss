@@ -22,7 +22,7 @@
            margin-top: 10px;
            height: 1px;
            width: 0%;
-           transition: .3s ease-in-out; 
+           transition: width .3s ease-in-out; 
            @include media ("<=desktop") {
             margin-top: 6px;
            }

@@ -2,10 +2,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: url(../images/tax-bg.jpg) no-repeat center / cover;
-    padding: 85px 0 80px 0; 
+    background: url(../images/tax-bg.jpg) no-repeat center top / cover;
+    min-height: 360px;
+    padding: 85px 0 120px 0; 
     @include media ("<=desktop") {
-        padding: 20px 0;
+        padding: 60px 0;
     }
     .h2 {
         color: #fff;
@@ -17,7 +18,7 @@
         font-size: 18px;
         text-align: center;
         color: #fff;
-        margin: 30px 0 35px 0;
+        margin: 27px 0 32px 0;
         max-width: 90vw;
     }
     .btn-tax {
@@ -31,16 +32,16 @@
         font-size: 14px;
         font-weight: bold;
         color: #fff;
-        min-width: 170px;
-        max-width: 170px;
+        width: 170px;
         min-height: 50px;
-        transition: .3s ease-in-out; 
-        img {
+        padding: 5px;
+        transition: background-color .3s ease-in-out; 
+        .fa-arrow-right {
+            font-size: 12px;
             margin-left: 10px;
-            height: 10px;
         }
         &:hover {
-            background: #3b648d;
+            background-color: #3b648d;
         }
     }
 }

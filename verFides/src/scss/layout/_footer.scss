@@ -1,9 +1,22 @@
 .footer {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 50px;
     @include media ("<=desktop") {
         padding-top: 20px;
+    } 
+    @include media ("<=tablet") {
+        &::after {
+            position: absolute;
+            top: 210px;
+            left: auto; 
+            background-color: #787878;
+            display: block;
+            content: "";
+            height: 1px;
+            width: 90vw;
+        }
     }   
 }

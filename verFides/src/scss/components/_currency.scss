@@ -27,7 +27,7 @@
             color: #787878;
             transition: 0.3s;
             padding: 0 8px;
-            transition: .3s ease-in-out; 
+            transition: color .3s ease-in-out; 
             &:hover {
                 color: #769eca;
             }
@@ -40,8 +40,9 @@
         display: none;
         width: 100%;
         overflow: hidden;
+        align-items: flex-start;
         white-space: nowrap; 
-        animation: marquee 10s linear infinite;
+        animation: marquee 20s linear infinite;
         background: #1a3255;
         padding: 10px 0;
         .name-currency {
@@ -54,7 +55,7 @@
         } 
     }
     @keyframes marquee {
-        0% { text-indent: 0; }
-        100% { text-indent: -100%; }
+        0% { text-indent: 100%; }
+        100% { text-indent: -270%; }
     }
 }

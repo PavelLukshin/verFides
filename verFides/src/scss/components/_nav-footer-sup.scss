@@ -1,54 +1,45 @@
-.nav-footer-sup { 
-    li {
-        list-style: none;
+.nav-menu-footer { 
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 590px;
+    line-height: 1.7;
+    padding: 0px!important;
+    @include media ("<=tablet") {
+       flex-direction: column;
+       align-content: space-between;
+       max-height: 180px;
+       width: 200px;
     }
+    @include media ("<=phone") {
+        align-content: flex-start;
+        width: 90vw;
+     }
     a {
         font-size: 15px;
         color: #787878;
         text-decoration: none;
-        transition: .3s ease-in-out; 
+        transition: color .3s ease-in-out; 
         &:hover {
             color: #4890de;
-        }    
+        }   
     }
-    .nav-menu-footer {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        max-width: 590px;
-        line-height: 1.7;
-        padding: 0px!important;
+    li {
+        list-style: none;
+        min-height: 10px;
+        max-width: 150px;
+        margin-right: 20px;
+        &:last-child {
+            margin-right: 0;
+        }
         @include media ("<=tablet") {
-           flex-direction: column;
-           align-content: space-between;
-           margin: 0 auto;
-           max-height: 180px;
-           max-width: 250px;
+            margin-right: 0px;
         }
-        li {
-            min-height: 10px;
-            max-width: 150px;
-            margin-right: 20px;
-            &:last-child {
-                margin-right: 0;
-            }
-            @include media ("<=tablet") {
-                margin-right: 0px;
-             }
-        }
-        img {
-            height: 12px;
+        @include media ("<=phone") {
+            margin-right: 50px;
         }
     }
-    &::after {
-        background-color: #769eca;
-        display: block;
-        content: "";
-        margin: 20px auto 0px auto;
-        height: 1px;
-        width: 250px;
-        @include media ("<=tablet") {
-            width: 80vw;
-         }
+    img {
+        height: 12px;
     }
 }
