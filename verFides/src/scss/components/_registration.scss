@@ -1,0 +1,99 @@
+.registration {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #1a3255;
+    min-height: 200px;
+    padding: 80px 0;
+    @include media ("<desktop") {
+        padding: 20px 0;
+    }
+    .registration-text {
+        text-align: center;
+        color: #fff;
+        @include media ("<desktop") {
+            margin-bottom: 20px;
+            width: 100%;
+        }
+    }
+    .form-registration {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+        @include media ("<desktop") {
+            flex-direction: column;
+            align-items: center;
+        }
+        .name {
+            @include media ("<desktop") {
+                margin-bottom: 20px;
+            }
+        }
+        .name, .email {
+            color: #fff;
+            font-size: 14px;
+            background: #2a4061;
+            border: none;
+            margin: 0 15px;
+            width: 350px;
+            height: 50px;
+            @include media ("<desktop") {
+                margin: 20px 0 0 0;
+            }
+            @include media ("<phone") {
+                width: 290px;
+            }
+        }
+        label.error {
+            position: absolute;
+            top: 55px;
+            right: 130px;
+            color: yellow;
+            @include media ("<desktop") {
+                top: 140px;
+                right: auto;
+                font-size: 16px;
+            }
+        }
+        #name-error {
+            position: absolute;
+            top: 55px;
+            left: -440px;
+            @include media ("<desktop") {
+                top: 70px;
+                left: auto;
+                font-size: 16px;
+            }
+        }
+        .error {
+            font-size: 14px;
+            color: yellow;           
+        }
+        .name.error,
+        .email.error {
+            border: 1px solid red;
+        }
+    }
+    .btn-registration {
+        border: 1px solid #fff;
+        background: transparent;
+        outline: none;
+        font-size: 14px;
+        font-weight: bold;
+        color: #fff;
+        width: 170px;
+        min-height: 50px;
+        margin: 40px 0 0 0;
+        padding: 5px;
+        transition: background-color .3s ease-in-out; 
+        .fa-arrow-right {
+            font-size: 12px;
+            margin-left: 10px;
+        }
+        &:hover {
+            background-color: #3b648d;
+        }
+    }
+}
