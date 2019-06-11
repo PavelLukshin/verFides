@@ -1,0 +1,18 @@
+.section-image {
+    img {
+        object-fit: cover ;
+        height: 300px;
+        width: 100%;
+    }
+    .mobile {
+        display: none;
+    }
+    @include media ("<tablet") {
+        .desktop {
+            display: none;
+        }
+        .mobile {
+            display: block;
+        }
+       }
+}
